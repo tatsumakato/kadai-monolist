@@ -32,3 +32,6 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::resource('users', 'UsersController', ['only' => ['show']]);
 });
+
+// Ranking
+Route::get('ranking/want', 'RankingController@want')->name('ranking.want');
